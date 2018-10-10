@@ -1,124 +1,168 @@
-body {
-    background-color: #f9fafc;
-}
-
 * {
-    padding: 0;
-    margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
 body {
-    margin-left: 20px
-}
-
-/* header */
-
-header {
-    height: 50px;
+    background-color: #f9fafc;
+    margin: 0 20px;
 }
 
 h2 {
-    float: left;
-    position: relative;
-    top: 50%;
-    transform:translateY(-50%);
     font-size: 15px;
 }
 
-nav{
-    float: right;  
-    position: relative;
-    top: 50%;
-    transform:translateY(-50%);
-    margin-right: 20px
+header {
+    display: flex;
+    flex-direction: column;
 }
 
-.clear {
-    clear: both;
+nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
 }
 
 a {
-    color: #69696a;
-    padding: 0 7px;
-    margin: 0 7px;
-    font-size: 15px
+    padding: 5px;
 }
+
 .hire {
     background-color: black;
     color: white;
     border-radius: 15px;
-    border: hidden;
-    padding: 5px 25px;
-}
-
-/* left section */
-
-.left {
-    float: left;
-    width: 50%;
-    height: 500px;
-    margin-top: 75px
+    display: flex;
+    justify-content: center;
+    padding: 7px;
 }
 
 p {
-    color:#69696a;
     border-left: 2px solid #69696a;
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
-h1 {
-    padding: 15px 0
-}
-
-/* right section */
-
-.right{
-    position: relative;
-    right: 5%;
-    float: right;
-    width: 350px;
-    margin-top: 50px;
-    height: 500px;
-}
-.pink {
-    background-color: rgba(247, 136, 167, 0.6);
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    position: absolute;
-    top: 10%;
-}
-
-.purple {
-    background-color: rgba(207, 130, 213, 0.6);
-    height: 125px;
-    width: 125px;
-    border-radius: 50%;
-    position: absolute;
-    top: 17%;
-    left: 60%
-}
-
-.orange {
-    background-color: rgba(247, 193, 162, 0.7);
-    height: 175px;
-    width: 175px;
-    border-radius: 50%;
-    position: absolute;
-    top: 35%;
-    left: 45%
-}
-
-/* bottom */
 button {
-    position: fixed;
-    bottom: 5%;
-    left: 50%;
-    transform:translateX(-50%);
     background-color: black;
     color: white;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    width: 95%;
+    font-size: 12px;
     border: hidden;
-    padding: 10px
+    position: fixed;
+    bottom: 5%;
+}
+
+@media only screen and (min-width: 550px) {
+    header, nav {
+        flex-direction: row;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    nav {
+        justify-content: space-around
+    }
+
+    .hire {
+        padding:
+    }
+    button  {
+        width: 30%;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        position: relative;
+        width: 551px;
+        height: 500px;
+    }
+
+    .pink {
+        background-color: rgba(247, 136, 167, 0.6);
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 50px
+    }
+    
+    .purple {
+        background-color: rgba(207, 130, 213, 0.6);
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        right: 80px
+    }
+    
+    .orange {
+        background-color: rgba(247, 193, 162, 0.7);
+        height: 225px;
+        width: 225px;
+        border-radius: 50%;
+        position: absolute;
+        top: 180px;
+        right: 90px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        flex-direction: row;
+    }
+
+    .left {
+        width: 46%;
+        margin-top: 200px;
+    }
+
+    .right {
+        width: 600px;
+        height: 800px;
+        margin-top: 100px;
+    
+    }
+
+    .pink {
+        background-color: rgba(247, 136, 167, 0.6);
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        left: 50px
+    }
+    
+    .purple {
+        background-color: rgba(207, 130, 213, 0.6);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: absolute;
+        top: 60px;
+        right: 20px
+    }
+    
+    .orange {
+        background-color: rgba(247, 193, 162, 0.7);
+        height: 275px;
+        width: 275px;
+        border-radius: 50%;
+        position: absolute;
+        top: 200px;
+        right: 0px;
+    }
+
 }
