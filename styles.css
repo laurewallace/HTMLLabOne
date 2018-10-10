@@ -1,0 +1,124 @@
+body {
+    background-color: #f9fafc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin-left: 20px
+}
+
+/* header */
+
+header {
+    height: 50px;
+}
+
+h2 {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform:translateY(-50%);
+    font-size: 15px;
+}
+
+nav{
+    float: right;  
+    position: relative;
+    top: 50%;
+    transform:translateY(-50%);
+    margin-right: 20px
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    color: #69696a;
+    padding: 0 7px;
+    margin: 0 7px;
+    font-size: 15px
+}
+.hire {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: hidden;
+    padding: 5px 25px;
+}
+
+/* left section */
+
+.left {
+    float: left;
+    width: 50%;
+    height: 500px;
+    margin-top: 75px
+}
+
+p {
+    color:#69696a;
+    border-left: 2px solid #69696a;
+    padding-left: 20px;
+}
+
+h1 {
+    padding: 15px 0
+}
+
+/* right section */
+
+.right{
+    position: relative;
+    right: 5%;
+    float: right;
+    width: 350px;
+    margin-top: 50px;
+    height: 500px;
+}
+.pink {
+    background-color: rgba(247, 136, 167, 0.6);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+}
+
+.purple {
+    background-color: rgba(207, 130, 213, 0.6);
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    position: absolute;
+    top: 17%;
+    left: 60%
+}
+
+.orange {
+    background-color: rgba(247, 193, 162, 0.7);
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 45%
+}
+
+/* bottom */
+button {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform:translateX(-50%);
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: hidden;
+    padding: 10px
+}
