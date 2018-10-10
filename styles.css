@@ -119,6 +119,15 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
+    nav {
+        margin-right: 50px;
+    }
+
+    a {
+        margin: 5px;
+    }
+
+
     .main {
         flex-direction: row;
     }
@@ -132,6 +141,7 @@ button {
         width: 600px;
         height: 800px;
         margin-top: 100px;
+        margin-left: 50px;
     
     }
 
@@ -142,7 +152,7 @@ button {
         border-radius: 50%;
         position: absolute;
         top: 5px;
-        left: 50px
+        left: 50px;
     }
     
     .purple {
@@ -152,7 +162,7 @@ button {
         border-radius: 50%;
         position: absolute;
         top: 60px;
-        right: 20px
+        right: 20px;
     }
     
     .orange {
@@ -163,6 +173,10 @@ button {
         position: absolute;
         top: 200px;
         right: 0px;
+    }
+
+    button {
+        width: 100px
     }
 
 }
